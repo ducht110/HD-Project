@@ -175,6 +175,7 @@
     <Content Include="app\controllers\contactController.js" />
     <Content Include="app\controllers\mainController.js" />
     <Content Include="app\routes.js" />
+    <Content Include="app\services\mainServices.js" />
     <Content Include="app\views\about.html" />
     <Content Include="app\views\contact.html" />
     <Content Include="app\views\home.html" />
@@ -232,7 +233,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\services\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

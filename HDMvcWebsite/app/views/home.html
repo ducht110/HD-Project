@@ -2,9 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <base href="/">
 </head>
 <body>
     <h1>Home page</h1>
     <p>{{message}}</p>
+    <a href="#" ng-click="runLoadingIcon()">get user</a>
+    <div ng-repeat="user in allUsers">
+        <p>{{user.firstName}}</p>
+    </div>
+
+
 </body>
 </html>

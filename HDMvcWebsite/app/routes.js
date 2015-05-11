@@ -1,6 +1,6 @@
 ﻿
 // configure our routes
-hdApp.config(function ($routeProvider) {
+hdApp.config(function ($routeProvider, $locationProvider) {
     $routeProvider
 
         // route for the home page
@@ -20,4 +20,7 @@ hdApp.config(function ($routeProvider) {
             templateUrl: 'app/views/contact.html',
             controller: 'contactController'
         });
+
+    // use the HTML5 History API
+    $locationProvider.html5Mode(true);
 });
