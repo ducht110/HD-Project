@@ -6,9 +6,9 @@ hdApp.controller('mainController', function ($scope, mainServices) {
 
     $scope.allUsers = null;
 
-  //  $scope.runLoadingIcon = function () {
+    $scope.runLoadingIcon = function () {
         $scope.allUsers = mainServices.getAllUsers();
-  //  }
+    }
 
 });
 

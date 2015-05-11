@@ -12,8 +12,8 @@ namespace HDServices.Controllers
      * https://msdn.microsoft.com/en-us/magazine/dn532203.aspx
      */
 
-    //[EnableCors(origins: "http://localhost:1098/", headers: "*", methods: "*")]
-    [EnableCors("*", "*", "*")]
+   // [EnableCors(origins: "http://localhost:1098/", headers: "*", methods: "*")]
+   // [EnableCors("*", "*", "*")]
     public class ValuesController : ApiController
     {
         [Route("api/values/GetUsers")]
