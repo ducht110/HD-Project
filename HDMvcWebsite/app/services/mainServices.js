@@ -1,8 +1,13 @@
-﻿hdApp.service('mainServices', function ($http) {
-    this.getAllUsers = function () {
-        //return [{ firstName: 'Anna', age: 18 }, { firstName: 'Kelly', age: 28 }];
-        $http.get(baseUrl + 'api/values/GetUsers').then(function (results) {
-            return results.data;
-        });
-    }
-});
+﻿
+var baseUrl = 'http://localhost:1098/';
+
+hdApp.factory('dataFactory', ['$http', function ($http) {
+
+    var dataFactory = {};
+
+    dataFactory.getAllUsers = function () {
+        return $http.get(baseUrl + 'api/values/GetUsers');
+    };
+
+    return dataFactory;
+}]);
