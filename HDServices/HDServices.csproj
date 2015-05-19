@@ -170,15 +170,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201505150944312_InitialCreate.cs" />
-    <Compile Include="Migrations\201505150944312_InitialCreate.Designer.cs">
-      <DependentUpon>201505150944312_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201505191051057_HD.cs" />
+    <Compile Include="Migrations\201505191051057_HD.Designer.cs">
+      <DependentUpon>201505191051057_HD.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Enrollment.cs" />
-    <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\Student.cs" />
-    <Compile Include="Models\Teacher.cs" />
+    <Compile Include="Models\Content.cs" />
+    <Compile Include="Models\News.cs" />
+    <Compile Include="Models\NewsCategory.cs" />
+    <Compile Include="Models\Page.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -242,8 +244,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201505150944312_InitialCreate.resx">
-      <DependentUpon>201505150944312_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201505191051057_HD.resx">
+      <DependentUpon>201505191051057_HD.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
