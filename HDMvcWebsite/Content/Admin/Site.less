@@ -1,7 +1,7 @@
 ﻿body {
     .login-group {
         .form-signin {
-            max-width: 300px;
+            max-width: 360px;
             padding: 19px 29px 10px;
             margin: 180px auto 7px;
             background-color: white;
@@ -10,48 +10,152 @@
             -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
             position: relative;
-        }
 
-        .form-signin-heading {
-            margin-bottom: 20px;
-        }
 
-        h2.form-signin-heading {
-            font-weight: normal;
-            font-size: 20px;
-            color: #7f8c8d;
-            margin-top: -15px;
-            text-align: left;
-        }
+            .form-signin-heading {
+                margin-bottom: 20px;
+            }
 
-        .input-prepend {
-            display: inline-block;
-            margin-bottom: 10px;
-            font-size: 0;
-            white-space: nowrap;
-            vertical-align: middle;
+            h2.form-signin-heading {
+                font-weight: normal;
+                font-size: 20px;
+                color: #7f8c8d;
+                margin-top: -15px;
+                text-align: left;
+            }
 
-            add-on:first-child {
+            .input-prepend {
+                display: inline-block;
+                margin-bottom: 10px;
+                font-size: 0;
+                white-space: nowrap;
+                vertical-align: middle;
+
+                add-on:first-child {
+                    border-radius: 0;
+                    background-color: #efefef;
+
+                    i {
+                        color: #7f8c8d;
+                    }
+                }
+
+                .add-on {
+                    display: inline-block;
+                    width: 28px;
+                    height: auto;
+                    min-width: 16px;
+                    padding: 4px 5px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 20px;
+                    text-align: center;
+                    text-shadow: 0 1px 0 #fff;
+                    background-color: #eee;
+                    border: 1px solid #ccc;
+
+
+                    .icon {
+                        display: inline;
+                        width: auto;
+                        height: auto;
+                        line-height: normal;
+                        vertical-align: baseline;
+                        background-image: none;
+                        background-position: 0% 0%;
+                        background-repeat: repeat;
+                        margin-top: 0;
+                        font-family: FontAwesome;
+                        font-weight: normal;
+                        font-style: normal;
+                        text-decoration: inherit;
+                        -webkit-font-smoothing: antialiased;
+                    }
+
+                    .icon-user:before {
+                        content: "\f007";
+                    }
+
+                    .icon-lock:before {
+                        content: "\f023";
+                    }
+                }
+
+                input[type="text"], input[type="password"] {
+                    font-size: 14px;
+                    font-style: italic;
+                    height: 30px;
+                    margin-bottom: 5px;
+                    padding: 4px 9px;
+                    min-width: 255px;
+                    border-radius: 0;
+                }
+
+                input[type="password"] {
+                    min-width: 228px;
+                }
+            }
+
+            #login {
+                background-color: #33B5E5;
+                border: 1px solid #33B5E5;
+                cursor: pointer;
                 border-radius: 0;
-                background-color: #efefef;
+                margin-right: -1px;
 
                 i {
-                    color: #7f8c8d;
+                    color: white;
+                    text-shadow: none;
+                    font-size: 14px;
+                    position: relative;
+                    top: -1px;
                 }
 
-                .icon-user:before {
-                    content: "\f007";
+                .fa fa-sign-in:before {
+                    content:"\f090";
                 }
             }
+        }
 
-            input[type="text"], input[type="password"] {
-                font-size: 16px;
-                height: auto;
-                margin-bottom: 5px;
-                padding: 4px 9px;
-                min-width: 255px;
-                border-radius: 0;
+        .signInRow {
+            max-width: 360px;
+            margin: 0 auto 20px;
+            list-style-type: none;
+            color: #7f8c8d;
+
+            h1 {
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 0;
+                margin: 0;
             }
+        }
+
+        .signInRow div:first-child {
+            float: left;
+        }
+
+        .signInRow div:last-child {
+            float: right;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .form-signin:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 143px;
+            left: 15px;
+            width: 8px;
+            height: 8px;
+            background: #FFFFFF;
+            border-left: 1px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            -moz-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
         }
     }
 }

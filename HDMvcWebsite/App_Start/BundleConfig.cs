@@ -29,6 +29,7 @@ namespace HDMvcWebsite
 
             var lessBundle = new Bundle("~/Admin/Less").Include(
                 "~/Content/bootstrap.css",
+                "~/Content/font-awesome.css",
                 "~/Content/Admin/*.less");
             lessBundle.Transforms.Add(new LessTransform());
             lessBundle.Transforms.Add(new CssMinify());
