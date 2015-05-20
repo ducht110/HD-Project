@@ -1,2 +1,3 @@
 http://themeforest.net/item/the-kamarel/full_screen_preview/5113091
+http://www.kindblad.com/2011/04/search-engine-friendly-urls-in-aspnet.html
 command: //command:  update-database

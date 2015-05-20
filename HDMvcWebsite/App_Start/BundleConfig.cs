@@ -27,6 +27,13 @@ namespace HDMvcWebsite
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
+            var lessBundle = new Bundle("~/Admin/Less").Include(
+                "~/Content/bootstrap.css",
+                "~/Content/Admin/*.less");
+            lessBundle.Transforms.Add(new LessTransform());
+            lessBundle.Transforms.Add(new CssMinify());
+            bundles.Add(lessBundle);
+
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = true;
