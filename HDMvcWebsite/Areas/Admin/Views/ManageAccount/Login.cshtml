@@ -1,26 +1,44 @@
 ﻿@inherits System.Web.Mvc.WebViewPage
-<div class="login-group">
-    <div class="container-fluid">
+@{
+    Layout = null;
+}
 
-        <form class="form-signin">
-            <h2 class="form-signin-heading"><strong>HD</strong>Management</h2>
-            <div class="input-prepend">
-                <span class="add-on">
-                    <i class="icon icon-user"></i>
-                </span>
-                <input type="text" placeholder="Username">
-            </div>
-            <div class="input-prepend">
-                <span class="add-on"><i class="icon icon-lock"></i></span>
-                <input type="password" placeholder="Password">
-                <a href="index.html"><span class="add-on" id="login"><i class="fa fa-sign-in"></i></span></a>
-            </div>
-        </form>
+<!DOCTYPE html>
+<html ng-app="hdApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | HDManagement</title>
+    @Styles.Render("~/Admin/Less")
+    @*@Scripts.Render("~/bundles/modernizr")*@
 
-        <div class="signInRow">
-            <div><h1>Sign in</h1></div>
-            <div><a href="#">Lost your password?</a></div>
+</head>
+<body>
+    <div class="login-group">
+        <div class="container-fluid">
+
+            <form class="form-signin">
+                <h2 class="form-signin-heading"><strong>HD</strong>Management</h2>
+                <div class="input-prepend">
+                    <span class="add-on">
+                        <i class="icon icon-user"></i>
+                    </span>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon icon-lock"></i></span>
+                    <input type="password" placeholder="Password">
+                    <a href="index.html"><span class="add-on" id="login"><i class="fa fa-sign-in"></i></span></a>
+                </div>
+            </form>
+
+            <div class="signInRow">
+                <div><h1>Sign in</h1></div>
+                <div><a href="#">Lost your password?</a></div>
+            </div>
+
         </div>
-
     </div>
-</div>
+</body>
+</html>
+
