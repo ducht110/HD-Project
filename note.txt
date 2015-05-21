@@ -1,7 +1,9 @@
+command: //command:  update-database
 http://themeforest.net/item/the-kamarel/full_screen_preview/5113091
 http://www.kindblad.com/2011/04/search-engine-friendly-urls-in-aspnet.html
-command: //command:  update-database
-teamview:
+//repository: http://www.codeproject.com/Articles/688929/Repository-Pattern-and-Unit-of
+http://www.codeproject.com/Articles/207820/The-Repository-Pattern-with-EF-code-first-Dependen
+//teamview:
 784 260 451
-7032
+2151
 

@@ -17,7 +17,8 @@ namespace HDMvcWebsite.Areas.Admin
             context.MapRoute(
                 "Admin_Default",
                 "Admin/{controller}/{action}/{Id}",
-                new { controller = "ManageAccount", action = "Login", Id = UrlParameter.Optional }
+                new { controller = "ManageAccount", action = "Login", Id = UrlParameter.Optional },
+                new[] { "HDMvcWebsite.Areas.Admin.Controllers" }
             );
 
         }

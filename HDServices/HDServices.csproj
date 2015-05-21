@@ -165,8 +165,24 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="DAL\HDContext.cs" />
+    <Compile Include="DAL\Concrete\ContentRepository.cs" />
+    <Compile Include="DAL\Concrete\DALContext.cs" />
+    <Compile Include="DAL\Concrete\HDContext.cs" />
+    <Compile Include="DAL\Concrete\NewsCategoryRepository.cs" />
+    <Compile Include="DAL\Concrete\NewsRepository.cs" />
+    <Compile Include="DAL\Concrete\PageRepository.cs" />
+    <Compile Include="DAL\Concrete\Repository.cs" />
+    <Compile Include="DAL\Concrete\RoleRepository.cs" />
+    <Compile Include="DAL\Concrete\UserRepository.cs" />
     <Compile Include="DAL\HDInitializer.cs" />
+    <Compile Include="DAL\Interfaces\IContentRepository.cs" />
+    <Compile Include="DAL\Interfaces\IDALContext.cs" />
+    <Compile Include="DAL\Interfaces\INewsCategoryRepository.cs" />
+    <Compile Include="DAL\Interfaces\INewsRepository.cs" />
+    <Compile Include="DAL\Interfaces\IPageRepository.cs" />
+    <Compile Include="DAL\Interfaces\IRepository.cs" />
+    <Compile Include="DAL\Interfaces\IRoleRepository.cs" />
+    <Compile Include="DAL\Interfaces\IUserRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

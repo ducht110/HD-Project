@@ -13,9 +13,13 @@ namespace HDServices.Controllers
         public ActionResult Index()
         {
 
-            using (var ctx = new HDContext())
-            {
-            }
+            //using (var context = new DALContext())
+            //{
+            //    Page page = new Page();
+            //    page.Title = "news title";
+
+            //    context.Pages.Create(page);
+            //}
 
             ViewBag.Title = "Home Page";
 
